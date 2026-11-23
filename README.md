@@ -75,3 +75,7 @@ Cada `push` hacia la rama `develop` (y ejecucion manual `workflow_dispatch`) eje
 1. **Seguridad de secretos:** Escaneo completo de historial con Gitleaks.
 2. **Validacion y compilacion:** `npm ci`, verificacion de tipos (`npx tsc --noEmit`), compilacion (`npm run build`) y carga del artifact descargable `entradasya-frontend-dist-<sha>` (`dist/` y `nginx.conf`).
 3. **Imagen Docker y auditoria:** Buildx multi-stage, publicacion en `ghcr.io/<owner>/entradasya-frontend:develop` (y en Docker Hub si estan configurados `DOCKERHUB_USERNAME` y `DOCKERHUB_TOKEN`), escaneo de vulnerabilidades con Trivy y carga del artifact `entradasya-frontend-trivy-report-<sha>`.
+
+## Estado de Verificacion
+
+- Pipeline CI/CD verificado con disparo automatico en rama `develop` hacia GHCR, Docker Hub y GitHub Actions Artifacts.
