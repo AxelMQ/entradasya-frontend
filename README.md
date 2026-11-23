@@ -78,4 +78,4 @@ Cada `push` hacia la rama `develop` (y ejecucion manual `workflow_dispatch`) eje
 
 ## Estado de Verificacion
 
-- Pipeline CI/CD verificado con disparo automatico en rama `develop` hacia GHCR, Docker Hub y GitHub Actions Artifacts.
+- Pipeline CI/CD verificado en tiempo real con disparo automatico en rama `develop` hacia GHCR, Docker Hub y GitHub Actions Artifacts.
